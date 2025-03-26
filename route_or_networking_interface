@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "Type r for Routes or i for Networking Interfaces:"
+read input
+if [ "$input" == "r" ]
+then
+echo "Showing routes:"
+route -n
+elif [ "$input" == "i' ]
+then
+echo "Type a networking interface:"
+read interface
+echo "Showing info of your networking interface $interface:"
+ifconfig $interface
+else
+echo "Invalid Option."
+fi
