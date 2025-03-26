@@ -14,3 +14,12 @@ ifconfig $interface
 else
 echo "Invalid Option."
 fi
+
+#-c 1 #envia um único pacote ICMP por IP
+#grep ttl #filtra a linha output de ping por ttl
+#cut -d " " -f 4 #define o espaço como delimitador e seleciona a quarta coluna
+#sed #substituição
+#. #qualquer caractere
+#$ #no final da linha
+#// #substituir por nada (remover)
+#& #executa o ping em background
